@@ -635,8 +635,8 @@ def reset():
 loseCondition = False
 winCondition = False
 game_mode = "home"
-level1_score = 5
-level2_score = 10
+level1_score = 30
+level2_score = 20
 player_type = 1
 levels_completed = set()
 button1 = Button(screen_width/2 - 75, screen_height/2-30, "LEVEL 1")
@@ -701,3 +701,4 @@ while run:
     pygame.display.update()
 
 pygame.quit()
+#pyinstaller --onefile -w --icon=icon.ico game.py
